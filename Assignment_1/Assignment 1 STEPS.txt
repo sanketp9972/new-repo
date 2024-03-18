@@ -1,0 +1,26 @@
+login to aws account
+navigate to EC2 dashboard
+click on Instances(running)
+click on launch instance 
+give name to instance -> sanket-instance
+select configuration -> Amazon Linux 2023 AMI
+instance type -> t2.micro
+key pair, download .pem file -> my-key.pem
+click on launch instance
+
+open CLI
+go to directory where .pem file is stored
+then use command -> ssh -i ./file_name.pem ec2-user@public_ip_address
+ssh -i .\my-key.pem ec2-user@13.201.133.85
+
+use nano to write python script -> nano file_name.py
+nano text_wrap.py
+write code, save and exit
+
+run code -> python3 text_wrap.py
+give input to it
+press enter to execute code
+
+type exit to logout
+on aws console, click on instance state and click stop instance and then terminate instance
+
